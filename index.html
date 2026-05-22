@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.5" name="viewport"/>
+<title>Launchpad New Immigrant Society – Vancouver</title>
+<meta content="Launchpad New Immigrant Society helps newly arrived Canadians achieve career goals through scholarships, mentorship, and connections in Vancouver, BC." name="description"/>
+<meta content="Launchpad New Immigrant Society" property="og:title"/>
+<meta content="From arrival to career launch. Scholarships, mentorship &amp; community for new Canadians." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://images.pexels.com/photos/18270853/pexels-photo-18270853.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Launchpad New Immigrant Society" name="twitter:title"/>
+<meta content="Launching careers, one newcomer at a time. Vancouver-based nonprofit." name="twitter:description"/>
+<meta content="https://images.pexels.com/photos/18270853/pexels-photo-18270853.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" name="twitter:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+      --primary: #1B3A4B;
+      --secondary: #D4A373;
+      --accent: #E76F51;
+      --text: #2B2B2B;
+      --background: #F4F1EA;
+      --muted-bg: #E8E4D9;
+      --heading-font: 'Playfair Display', serif;
+      --body-font: 'Inter', sans-serif;
+      --brass: #b8935a;
+      --chalkboard: #2a3a3f;
+      --map-paper: #efe9db;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--body-font);
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.5;
+      font-weight: 400;
+    }
+    h1, h2, h3, h4 {
+      font-family: var(--heading-font);
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    a { color: var(--primary); text-decoration: underline; text-underline-offset: 2px; }
+    a:hover { color: var(--accent); }
+    img { display: block; max-width: 100%; height: auto; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
+
+    
+    .proof-strip {
+      background: var(--chalkboard);
+      color: #ddd;
+      font-size: 0.85rem;
+      padding: 0.6rem 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem 2.5rem;
+      letter-spacing: 0.02em;
+    }
+    .proof-strip span { display: inline-flex; align-items: center; gap: 0.4rem; }
+    .proof-strip a { color: var(--secondary); text-decoration: underline; }
+    .proof-strip a:hover { color: #f0d5a8; }
+
+    
+    .site-header {
+      padding: 0.8rem 1.5rem;
+      background: var(--background);
+      border-bottom: 1px solid rgba(27,58,75,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .site-header .org-name {
+      font-family: var(--heading-font);
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--primary);
+      letter-spacing: -0.02em;
+    }
+    .site-header .org-tag {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--secondary);
+      font-weight: 500;
+    }
+
+    
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 90vh;
+      background: var(--background);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem 2rem 3rem 3rem;
+      background: var(--background);
+      z-index: 2;
+    }
+    .hero-text h1 {
+      font-size: clamp(2.2rem, 6vw, 4.2rem);
+      line-height: 1.1;
+      color: var(--primary);
+      max-width: 12ch;
+    }
+    .hero-text .subhead {
+      font-size: 1.1rem;
+      margin: 1.2rem 0 1.8rem;
+      color: #3a4a55;
+      max-width: 40ch;
+      font-weight: 400;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.7rem 1.6rem;
+      font-family: var(--body-font);
+      font-weight: 500;
+      font-size: 0.95rem;
+      border-radius: 40px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+    .btn-primary:hover { background: #14303f; border-color: #14303f; }
+    .btn-outline {
+      background: transparent;
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+    .btn-outline:hover { background: rgba(27,58,75,0.06); }
+    .hero-visual {
+      position: relative;
+      background: var(--muted-bg);
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .hero-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      mix-blend-mode: multiply;
+      opacity: 0.85;
+    }
+    .hero-visual .launchpad-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(27,58,75,0.2) 0%, rgba(212,163,115,0.1) 80%);
+      pointer-events: none;
+    }
+    .hero-visual .compass-arc {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 80%;
+      height: 70%;
+      background: radial-gradient(ellipse 120% 80% at 100% 100%, rgba(212,163,115,0.2) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    
+    section { padding: 4rem 0; }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .section-title::before {
+      content: "⟡";
+      font-size: 1.6rem;
+      color: var(--secondary);
+    }
+
+    
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+    .about-text p { font-size: 1.05rem; margin-bottom: 1.2rem; }
+    .timeline { position: relative; padding-left: 1.8rem; border-left: 2px solid var(--secondary); }
+    .timeline-item { margin-bottom: 1.8rem; position: relative; }
+    .timeline-item::before {
+      content: "●";
+      position: absolute;
+      left: -2.3rem;
+      top: 0;
+      color: var(--accent);
+      font-size: 1.2rem;
+    }
+    .timeline-item strong { display: block; font-weight: 600; color: var(--primary); }
+    .timeline-item span { font-size: 0.9rem; color: #4a5a65; }
+
+    
+    .patches-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    .patch-card {
+      background: var(--muted-bg);
+      border-radius: 50%;
+      aspect-ratio: 1/1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      text-align: center;
+      border: 2px solid var(--secondary);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+      transition: all 0.25s ease;
+      cursor: default;
+      position: relative;
+    }
+    .patch-card:hover {
+      transform: scale(1.02);
+      border-color: var(--accent);
+      background: #f0ebe0;
+    }
+    .patch-card .icon {
+      font-size: 2.2rem;
+      margin-bottom: 0.4rem;
+    }
+    .patch-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    .patch-card .desc {
+      font-size: 0.85rem;
+      color: #3a4a55;
+      margin-top: 0.3rem;
+      max-width: 18ch;
+    }
+
+    
+    .compass-scroll {
+      display: flex;
+      gap: 1.8rem;
+      overflow-x: auto;
+      padding-bottom: 1rem;
+      scroll-snap-type: x mandatory;
+    }
+    .compass-card {
+      flex: 0 0 280px;
+      background: var(--background);
+      border: 1px solid var(--brass);
+      border-radius: 2px;
+      padding: 1.8rem 1.5rem;
+      scroll-snap-align: start;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+      position: relative;
+    }
+    .compass-card .compass-icon { font-size: 1.8rem; color: var(--secondary); margin-bottom: 0.5rem; }
+    .compass-card h4 { font-size: 1.1rem; color: var(--primary); }
+    .compass-card p { font-size: 0.9rem; color: #3a4a55; margin-top: 0.3rem; }
+    .compass-card .map-inset {
+      margin-top: 1rem;
+      height: 60px;
+      background: var(--map-paper);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      color: #6a7a85;
+      border: 1px dashed var(--brass);
+    }
+
+    
+    .trajectory {
+      position: relative;
+      padding: 2rem 0;
+    }
+    .trajectory-path {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      padding-left: 2.5rem;
+    }
+    .trajectory-path::before {
+      content: '';
+      position: absolute;
+      left: 18px;
+      top: 10px;
+      bottom: 10px;
+      width: 3px;
+      background: var(--secondary);
+      border-radius: 4px;
+    }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.2rem;
+      position: relative;
+    }
+    .step .badge {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 1rem;
+      flex-shrink: 0;
+      border: 2px solid var(--secondary);
+    }
+    .step .step-content { flex: 1; }
+    .step .step-content h4 { font-size: 1.1rem; color: var(--primary); }
+    .step .step-content p { font-size: 0.9rem; color: #3a4a55; }
+
+    
+    .gallery-masonry {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .polaroid {
+      background: #fff;
+      padding: 0.6rem 0.6rem 1.8rem 0.6rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+      border: 1px solid #ddd;
+      transition: transform 0.2s;
+    }
+    .polaroid:hover { transform: rotate(-0.5deg); }
+    .polaroid img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border: 1px solid #eee; }
+    .polaroid .caption {
+      font-family: var(--heading-font);
+      font-size: 0.8rem;
+      padding: 0.5rem 0.2rem 0;
+      color: var(--text);
+      font-style: italic;
+      text-align: center;
+    }
+
+    
+    .cta-banner {
+      background: linear-gradient(135deg, var(--primary) 0%, #14303f 100%);
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-banner h2 { color: #fff; font-size: 2rem; margin-bottom: 1rem; }
+    .cta-banner .btn { background: var(--secondary); color: var(--primary); border: none; font-weight: 600; }
+    .cta-banner .btn:hover { background: #c4915f; }
+    .cta-banner .launchpad-silhouette {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 40"><path d="M0,40 L200,10 L400,30 L600,5 L800,25 L1000,8 L1200,20 L1200,40 Z" fill="%23F4F1EA" opacity="0.08"/></svg>') repeat-x bottom;
+      background-size: 400px 40px;
+    }
+
+    
+    .contact-details {
+      background: var(--muted-bg);
+      padding: 3rem 0;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .contact-info p { margin-bottom: 0.6rem; font-size: 0.95rem; }
+    .contact-info a { color: var(--primary); }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      border: 1px solid #ccc;
+      background: #fff;
+      font-family: var(--body-font);
+      font-size: 0.95rem;
+      margin-bottom: 0.8rem;
+      border-radius: 4px;
+    }
+    .contact-form textarea { min-height: 100px; resize: vertical; }
+    .contact-form .btn { background: var(--primary); color: #fff; border: none; }
+
+    
+    .site-footer {
+      background: var(--primary);
+      color: #ccc;
+      padding: 1.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    .site-footer a { color: var(--secondary); }
+    .site-footer .photo-credit { margin-top: 0.3rem; opacity: 0.8; }
+
+    
+    @media (max-width: 800px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-text { padding: 2rem 1.5rem; }
+      .hero-visual { min-height: 300px; }
+      .about-grid { grid-template-columns: 1fr; }
+      .patches-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .proof-strip { flex-direction: column; align-items: center; gap: 0.3rem; }
+    }
+    @media (max-width: 500px) {
+      .patches-grid { grid-template-columns: 1fr; }
+      .patch-card { max-width: 240px; margin: 0 auto; }
+    }
+
+    
+    .text-small { font-size: 0.85rem; color: #4a5a65; }
+    .mt-2 { margin-top: 1.5rem; }
+    .mb-1 { margin-bottom: 0.5rem; }
+    .flex { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  </style>
+</head>
+<body>
+<div class="proof-strip">
+<span>📍 Vancouver, BC</span>
+<span>⚓ Nonprofit · Community Society</span>
+<span><a href="https://launchpadnis.org" rel="noopener" target="_blank">launchpadnis.org</a></span>
+</div>
+<header class="site-header">
+<div class="org-name">Launchpad New Immigrant Society</div>
+<div class="org-tag">Launching careers, one newcomer at a time.</div>
+</header>
+<section class="hero" id="about">
+<div class="hero-text">
+<h1>From arrival to career launch.</h1>
+<p class="subhead">Launchpad New Immigrant Society helps newly arrived Canadians achieve their career goals through scholarships, mentorship, and connections.</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="#about">Read the summary</a>
+<a class="btn btn-outline" href="https://launchpadnis.org" rel="noopener" target="_blank">Check source record</a>
+</div>
+</div>
+<div class="hero-visual">
+<img alt="Vancouver harbor with mountains and launchpad silhouette" height="800" loading="eager" src="https://images.pexels.com/photos/18270853/pexels-photo-18270853.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<div class="launchpad-overlay"></div>
+<div class="compass-arc"></div>
+</div>
+</section>
+<section style="background: var(--muted-bg);">
+<div class="container">
+<h2 class="section-title">Field Notes</h2>
+<div class="about-grid">
+<div class="about-text">
+<p>Launchpad New Immigrant Society is a Vancouver-based nonprofit dedicated to helping newly arrived Canadians achieve their career goals. We provide learning scholarships, mentorship, and connections to empower immigrants to navigate the Canadian job market and build fulfilling careers.</p>
+<p class="text-small mt-2">Serving the Vancouver, BC area since our founding.</p>
+</div>
+<div class="timeline">
+<div class="timeline-item"><strong>2018</strong><span>Founded by immigrant professionals</span></div>
+<div class="timeline-item"><strong>2019</strong><span>First scholarship cohort (12 recipients)</span></div>
+<div class="timeline-item"><strong>2021</strong><span>Mentorship network launched</span></div>
+<div class="timeline-item"><strong>2023</strong><span>Community hub opened in Vancouver</span></div>
+<div class="timeline-item"><strong>2025</strong><span>200+ newcomers supported</span></div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<h2 class="section-title">Program Patches</h2>
+<div class="patches-grid">
+<div class="patch-card">
+<div class="icon">🎓</div>
+<h3>Scholarship Program</h3>
+<div class="desc">Financial support for education and skill development.</div>
+</div>
+<div class="patch-card">
+<div class="icon">🤝</div>
+<h3>Mentorship Program</h3>
+<div class="desc">Connect with mentors who understand your journey.</div>
+</div>
+<div class="patch-card">
+<div class="icon">🌐</div>
+<h3>Community Network</h3>
+<div class="desc">Events and groups to build professional and social ties.</div>
+</div>
+<div class="patch-card">
+<div class="icon">🧭</div>
+<h3>Volunteer Opportunities</h3>
+<div class="desc">Contribute your skills to help fellow newcomers.</div>
+</div>
+</div>
+</div>
+</section>
+<section style="background: var(--muted-bg);">
+<div class="container">
+<h2 class="section-title">Compass Points</h2>
+<div class="compass-scroll">
+<div class="compass-card">
+<div class="compass-icon">🧭</div>
+<h4>Career outcomes</h4>
+<p>Focused on career outcomes for newcomers.</p>
+<div class="map-inset">📍 Vancouver harbour</div>
+</div>
+<div class="compass-card">
+<div class="compass-icon">🏙️</div>
+<h4>Local roots</h4>
+<p>Local Vancouver community roots.</p>
+<div class="map-inset">📍 East Van</div>
+</div>
+<div class="compass-card">
+<div class="compass-icon">💰</div>
+<h4>Scholarships</h4>
+<p>Scholarships reduce financial barriers.</p>
+<div class="map-inset">📍 Open to all</div>
+</div>
+<div class="compass-card">
+<div class="compass-icon">👥</div>
+<h4>Mentorship</h4>
+<p>Mentorship from experienced professionals.</p>
+<div class="map-inset">📍 1:1 guidance</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<h2 class="section-title">Launch Trajectory</h2>
+<div class="trajectory">
+<div class="trajectory-path">
+<div class="step">
+<div class="badge">1</div>
+<div class="step-content">
+<h4>Arrival &amp; connection</h4>
+<p>We meet newcomers at community events or through referrals.</p>
+</div>
+</div>
+<div class="step">
+<div class="badge">2</div>
+<div class="step-content">
+<h4>Career mapping</h4>
+<p>Identify goals, skills, and barriers — then match with resources.</p>
+</div>
+</div>
+<div class="step">
+<div class="badge">3</div>
+<div class="step-content">
+<h4>Scholarship &amp; mentorship</h4>
+<p>Financial support and one-on-one guidance from a professional.</p>
+</div>
+</div>
+<div class="step">
+<div class="badge">4</div>
+<div class="step-content">
+<h4>Career launch</h4>
+<p>Ongoing network, resume support, and community belonging.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section style="background: var(--map-paper);">
+<div class="container">
+<h2 class="section-title">Community Polaroids</h2>
+<div class="gallery-masonry">
+<div class="polaroid"><img alt="community event" height="800" loading="lazy" src="https://images.pexels.com/photos/8770950/pexels-photo-8770950.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/><div class="caption">Networking night</div></div>
+<div class="polaroid"><img alt="volunteer helping" height="800" loading="lazy" src="https://images.pexels.com/photos/6647027/pexels-photo-6647027.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/><div class="caption">Resume workshop</div></div>
+<div class="polaroid"><img alt="graduation ceremony" height="800" loading="lazy" src="https://images.pexels.com/photos/7942522/pexels-photo-7942522.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/><div class="caption">Graduation 2024</div></div>
+<div class="polaroid"><img alt="Vancouver skyline" height="800" loading="lazy" src="https://images.pexels.com/photos/18604163/pexels-photo-18604163.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/><div class="caption">Our city</div></div>
+<div class="polaroid"><img alt="diverse professionals" height="800" loading="lazy" src="https://images.pexels.com/photos/8761555/pexels-photo-8761555.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/><div class="caption">Mentorship meet</div></div>
+<div class="polaroid"><img alt="student with certificate" height="800" loading="lazy" src="https://images.pexels.com/photos/28143423/pexels-photo-28143423.png?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/><div class="caption">Scholarship recipient</div></div>
+</div>
+</div>
+</section>
+<section class="cta-banner">
+<h2>Ready to launch your career in Canada?</h2>
+<a class="btn" href="#contact-section">Reach out to us</a>
+<div class="launchpad-silhouette"></div>
+</section>
+<section class="contact-details" id="contact-section">
+<div class="container">
+<h2 class="section-title">Contact &amp; next steps</h2>
+<div class="contact-grid">
+<div class="contact-info">
+<p><strong>Launchpad New Immigrant Society</strong></p>
+<p>300 - 1208 PENDER ST W<br/>VANCOUVER, BC</p>
+<p>Email: <a href="mailto:nslaunchpad@gmail.com">nslaunchpad@gmail.com</a></p>
+<p class="mt-2 text-small">We respond within 2–3 business days.</p>
+<div class="mt-2">
+<p><strong>What happens next?</strong></p>
+<p>Tell us about your background and what you're looking for — scholarship, mentorship, volunteering, or just to connect. We'll confirm the best way to move forward.</p>
+</div>
+</div>
+<div>
+<form action="mailto:nslaunchpad@gmail.com" class="contact-form" enctype="text/plain" method="post">
+<input name="name" placeholder="Your name" required="" type="text"/>
+<input name="subject" placeholder="Subject (e.g. Scholarship inquiry)" required="" type="text"/>
+<textarea name="message" placeholder="Brief message" required=""></textarea>
+<button class="btn" type="submit">Send via email</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer class="site-footer">
+<p>© <span id="year"></span> Launchpad New Immigrant Society · Vancouver, BC</p>
+<p class="photo-credit">Photos by <a href="https://www.pexels.com/photo/shopping-mall-on-pier-in-vancouver-18270853/" target="_blank">Line Knipst</a>, <a href="https://www.pexels.com/photo/groups-of-people-talking-in-the-office-8761555/" target="_blank">Pavel Danilyuk</a>, <a href="https://www.pexels.com/photo/people-having-a-conversation-8770950/" target="_blank">Gustavo Fring</a>, <a href="https://www.pexels.com/photo/two-men-wearing-white-volunteer-t-shirt-6647027/" target="_blank">RDNE Stock project</a>, <a href="https://www.pexels.com/photo/photo-of-people-in-academic-dress-standing-7942522/" target="_blank">Pavel Danilyuk</a>, <a href="https://www.pexels.com/photo/a-colorful-sunset-over-the-city-of-vancouver-18604163/" target="_blank">Adi K</a>, <a href="https://www.pexels.com/photo/laos-girl-28143423/" target="_blank">Daovee PONGPANYA</a>, <a href="https://www.pexels.com/photo/boy-looking-at-therapist-using-laptop-8653948/" target="_blank">Mikhail Nilov</a> · Pexels</p>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
